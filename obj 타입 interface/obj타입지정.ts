@@ -49,3 +49,16 @@ interface 숙제3 extends 숙제2{
 // 2. 이 object 자료는 minus() 함수를 내부에 가지고 있으며 minus 함수는 파라미터 2개를 입력하면 빼서 return 해줍니다. 
 // 이 object 자료를 어떻게 만들면 될까요? 
 // interface를 이용해서 object에 타입지정도 해보십시오. 
+interface 숙제4 {
+    plus : (a:number, b:number)=>number
+    minus : (a:number, b:number)=>number
+}
+let 숙제4obj:숙제4 = {
+    plus(a,b){
+        return a+b
+    },
+    minus(a,b){
+        return a-b
+    }
+}
+// 함수타입은 ()=>{} 이렇게 만들면 된다고 했습니다.
